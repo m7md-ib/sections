@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #c65a1d; /* Orange */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #dadada;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            background-color: #f7f7f7;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        nav a:hover {
+            background-color: #c65a1d;
+            color: white;
+        }
+
+        .section {
+            padding: 20px;
+            display: flex;
+            background-color: #555;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            
+        }
+
+        .card-body {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-body p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .card-body a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #c65a1d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .card-body a:hover {
+            background-color: #a04716;
+        }
+
+        footer {
+            background-color: #c65a1d;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Power Grid: Store or HomePage
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact us</a>
+    </nav>
+
+    <section class="section">
+        <div class="card">
+            <img style="height: 200px;" src="img1.jpg" alt="Programming languages">
+            <div class="card-body">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor provident debitis tenetur.</p>
+                <a href="#">Go Somewhere</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="height: 200px;" src="img2.jpg" alt="Code snippet">
+            <div class="card-body">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor provident debitis tenetur.</p>
+                <a href="#">Go Somewhere</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img style="height: 200px;" src="img3.webp" alt="Laptop coding">
+            <div class="card-body">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor provident debitis tenetur.</p>
+                <a href="#">Go Somewhere</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Copywrite @2022
+    </footer>
+
+</body>
+</html>
